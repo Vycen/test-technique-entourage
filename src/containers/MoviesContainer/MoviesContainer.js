@@ -14,7 +14,7 @@ class MoviesContainer extends Component {
         <div style={styles.sortContainer}>
           <div style={{backgroundColor: releaseDateSortingIcon ? 'aliceblue' : 'white', ...styles.sort}}>
             <div onClick={() => toggleSorting()}>Release Date</div>
-            {releaseDateSortingIcon && <img style={styles.icon} src={releaseDateSortingIcon}/>}
+            {releaseDateSortingIcon && <img style={styles.icon} src={releaseDateSortingIcon} alt="icon" />}
           </div>
         </div>
         {movieList.map((movie) => <MovieListItem key={movie.id} movie={movie}/>)}
