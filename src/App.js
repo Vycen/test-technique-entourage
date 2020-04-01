@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
+import {Provider} from 'react-redux';
+import {applyMiddleware, createStore} from 'redux';
+import createSagaMiddleware from 'redux-saga';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from "./pages/Home";
+import MovieDetails from "./pages/MovieDetails";
+
+import AppReducers from './ducks';
+// Saga
+import rootSaga from './sagas';
+import {RoutesConstants} from "./constants";
+
+const sagaMiddleware = createSagaMiddleware();
+const store = createStore(
+  AppReducers,
+  applyMiddleware(sagaMiddleware),
+);
+
+sagaMiddleware.run(rootSaga);
+
+export default class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path={`${RoutesConstants.MOVIE}/:movieId`} component={MovieDetails}/>
+            <Redirect from='*' to='/'/>
+          </Switch>
+        </Router>
+      </Provider>
+    );
+  }
 }
-
-export default App;
