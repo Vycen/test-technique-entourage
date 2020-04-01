@@ -1,8 +1,9 @@
-#Test technique pour **Entourage**
-Par **Emile Bex**
+# Test technique pour **Entourage**
+Par **Emile Bex**.
+
+Initialisé avec `create-react-app`.
 
 ## Modules utilisées ##
-- `create-react-app`
 - `redux`
 - `redux-saga`
 - `reselect`

@@ -4,6 +4,8 @@
     <list default="true" id="dae9d86e-11b5-4cbb-88af-8e1d0e92adbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MoviesContainer/MoviesContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MoviesContainer/MoviesContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585658947335</updated>
       <workItem from="1585658949469" duration="21734000" />
-      <workItem from="1585693098971" duration="19610000" />
+      <workItem from="1585693098971" duration="20315000" />
     </task>
     <servers />
   </component>
@@ -115,13 +117,17 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1585666101012" />
-    <state x="295" y="164" width="689" height="472" key="find.popup" timestamp="1585739293472">
+    <state x="295" y="164" width="689" height="472" key="find.popup" timestamp="1585767738472">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="295" y="164" width="689" height="472" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585739293472" />
+    <state x="295" y="164" width="689" height="472" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585767738472" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1585745158666">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585745158666" />
+    <state x="370" y="302" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585767918336">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="370" y="302" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1280.800@0.0.1280.800" timestamp="1585767918336" />
   </component>
 </project>
